@@ -61,6 +61,7 @@ pip install torch matplotlib pygame
 1. **Clone the Repository**
    ```sh
    git clone https://github.com/GuniDH/Game-Of-Life-Genetic-Algorithm.git
+   cd Game-Of-Life-Genetic-Algorithm
 
    ```
 2. **Run the Genetic Algorithm**
