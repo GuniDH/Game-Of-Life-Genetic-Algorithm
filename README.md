@@ -61,7 +61,7 @@ pip install torch matplotlib pygame
 1. **Clone the Repository**
    ```sh
    git clone https://github.com/GuniDH/Game-Of-Life-Genetic-Algorithm.git
-   cd GameOfLife-GA
+
    ```
 2. **Run the Genetic Algorithm**
    ```sh
@@ -99,9 +99,6 @@ winning_chromosome = gc.evolve(generations=50)
 gc.simulate_winning_chromosome(winning_chromosome)
 ```
 
-## Contributions
-
-Contributions are welcome! Feel free to submit issues and pull requests to improve the model.
 
 ## License
 
