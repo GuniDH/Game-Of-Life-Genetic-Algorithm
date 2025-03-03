@@ -1,6 +1,6 @@
 from GeneticComputation import GeneticAlgorithm
 
-# Author: Guni Deyo Haness 215615519
+# Author: Guni 
 
 def main():
     gc = GeneticAlgorithm() 
