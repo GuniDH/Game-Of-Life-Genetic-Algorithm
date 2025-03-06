@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a **Genetic Algorithm (GA) to optimize initial configurations** in **Conway’s Game of Life**. The goal is to evolve an initial pattern that remains **alive and dynamic for as long as possible** before stabilizing.
+This project implements a **Genetic Algorithm to optimize initial configurations** in **Conway’s Game of Life**. The goal is to evolve an initial pattern that remains **alive and dynamic for as long as possible** before stabilizing.
 
 The algorithm uses **evolutionary principles** such as:
 - **Selection** (Roulette selection based on fitness)
@@ -38,7 +38,7 @@ The **best evolved configuration** is visualized using **Pygame** after the evol
 
 ### **3. Crossover (Recombination)**
 - Two parents are selected using **roulette selection**.
-- The grid is **split into two halves**, and each parent contributes one part.
+- The grid is **split into two**, and each parent contributes one part.
 - This ensures a mix of beneficial traits.
 
 ### **4. Mutation**
@@ -46,28 +46,8 @@ The **best evolved configuration** is visualized using **Pygame** after the evol
 - **Mutation probability doubles** if evolution stagnates (no improvement in max fitness for multiple generations).
 
 ### **5. Evolutionary Process**
-- The algorithm runs for a **fixed number of generations** (default = 50).
+- The algorithm runs for a **fixed number of generations**.
 - The best configuration is selected and **simulated visually**.
-
-## Installation
-
-Ensure you have Python installed and install the required dependencies:
-```sh
-pip install torch matplotlib pygame
-```
-
-## Running the Program
-
-1. **Clone the Repository**
-   ```sh
-   git clone https://github.com/GuniDH/Game-Of-Life-Genetic-Algorithm.git
-   cd Game-Of-Life-Genetic-Algorithm
-
-   ```
-2. **Run the Genetic Algorithm**
-   ```sh
-   python Main.py
-   ```
 
 ## Expected Workflow
 
@@ -89,21 +69,6 @@ Defined in `Constants.py`:
 | Grid Size (Rows x Cols) | 108x192 |
 | Stability Detection Window | 10 Generations |
 | Evolution Speed       | `1e-10` |
-
-## Example Code Usage
-
-```python
-from GeneticComputation import GeneticAlgorithm
-
-gc = GeneticAlgorithm()
-winning_chromosome = gc.evolve(generations=50)
-gc.simulate_winning_chromosome(winning_chromosome)
-```
-
-
-## License
-
-This project is licensed under the **MIT License**.
 
 ---
 ### Author
